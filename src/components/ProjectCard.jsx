@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-export default function ProjectCard({ title, description, img }) {
+export default function ProjectCard({ title, description }) {
   return (
-    <div style={{
-      border: '1px solid #eee',
-      borderRadius: 8,
-      overflow: 'hidden',
-      background: '#fff'
-    }}>
-      <div style={{ height: 160, background: '#ddd' }}>
+    <div
+      style={{
+        border: '1px solid #eee',
+        borderRadius: 8,
+        overflow: 'hidden',
+        background: '#fff',
+      }}
+    >
+      <div style={{ height: 160, background: '#ddd' }} >
         {/* ضع هنا src={img} في حالة وجود صور فعلية */}
       </div>
       <div style={{ padding: 16 }}>
@@ -16,5 +18,5 @@ export default function ProjectCard({ title, description, img }) {
         <p style={{ margin: 0, color: 'var(--muted)' }}>{description}</p>
       </div>
     </div>
-  )
+  );
 }
